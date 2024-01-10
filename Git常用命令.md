@@ -42,3 +42,10 @@ git rm -r --cached .  #清除缓存
 git add . #重新trace file
 git commit -m "update .gitignore" #提交和注释
 git push origin master #可选，如果需要同步到remote上的话
+
+版本回退
+git log #查看历史记录
+git log --pretty=oneline #美化历史记录
+git reset --hard HEAD^ #回退到上一个版本
+git reset --hard 1094a #会退到指定版本 1094a【指定commit id即版本号】
+git reflog #记录历史命令
