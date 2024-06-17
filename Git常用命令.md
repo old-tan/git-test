@@ -26,9 +26,14 @@
 4. git add /src // /xxx 目录下
 
 ### git 合并分支中某一次提交
-1. git cherry-pick <hash> 某一次hash
-2. git cherry-pick <xxx> xxx分支的最新一次提交
-3. git cherry-pick <hasha> <hashb>  合并 多次提交的 hash 串连
+1. 合并某一次提交
+git log --oneline xxx 查看xxx分支中的所有提交
+git cherry-pick <hash> 选择某一次hash进行合并
+2. 合并最新一次提交
+git cherry-pick <xxx> xxx分支的最新一次提交
+3. 合并多个提交
+git cherry-pick <hasha> <hashb>  合并 多次提交的 hash 串连
+
 
 ### commit 相关
 #### 撤销 commit
